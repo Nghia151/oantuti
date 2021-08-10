@@ -1,0 +1,55 @@
+.speech-bubble {
+	position: relative;
+	background: #45D994;
+	border-radius: .4em;
+	
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 35px solid transparent;
+	border-top-color: #1edd84;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -17.5px;
+	margin-bottom: -35px;
+}
+@font-face {
+    font-family: 'gameOanTuTi';
+    src: url(../font/Pony.ttf);
+}
+
+.bubble{
+	border: 4px solid #1edd84 ;
+	width: 100px;
+	height: 100px;
+	background:#fff;
+	border-radius: 20px;
+	
+}
+.player{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.btnSelect{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 10px;
+}
+.game {
+    background-image: url(../img/bgGame.png);
+	background-size: 100%;
+    height: 100vh;
+    font-family: 'gameOanTuTi';
+}
