@@ -19,7 +19,7 @@ const gameOanTuTiReducer = (state = initialState, { type, payload }) => {
             let mangDatCuocUpdate = [...state.mangDatCuoc];
             mangDatCuocUpdate = mangDatCuocUpdate.map((item, idx) => {
                 return { ...item, datCuoc: false };
-            });
+            });// nghĩ được cái hàm này cũng hay đó :))
             state.mangDatCuoc.ma = payload;
             // let index = mangDatCuocUpdate.findIndex(item => item.ma === payload);
             let datCuocFind = mangDatCuocUpdate.find((item) => item.ma === payload); // chỗ này nên sử dụng find để tìm ra thẳng luôn k cần find index
