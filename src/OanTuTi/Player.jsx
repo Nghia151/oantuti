@@ -9,6 +9,7 @@ class Player extends Component {
             <div className="player mt-4">
                 <div className="bubble">
                     <img className="mt-3" src={mangDatCuoc.find(item=>item.datCuoc === true).hinhAnh} width={60} height={60} />
+                    {/* tạo state 1 đối tượng được chọn thôi chứ cần chi quăng về cái mảng để phải dùng hàm find vậy */}
                 </div>
                 <div className="speech-bubble"></div>
                 <img src="./images/player.png" alt="" width={200} height={200} />

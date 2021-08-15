@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 class Info extends Component {
     render() {
-        const {ketQua, soBanChoi, soBanThang} = this.props;
+        const {ketQua, soBanChoi, soBanThang} = this.props.OTT;
         return (
             <div>
                 <div className="text-warning display-4">{ketQua}</div>
@@ -17,9 +17,10 @@ class Info extends Component {
     }
 }
 const mapStateToProps = state =>({
-    ketQua: state.gameOanTuTiReducer.ketQua,
-    soBanThang:state.gameOanTuTiReducer.soBanThang,
-    soBanChoi:state.gameOanTuTiReducer.soBanChoi,
+    OTT: state.gameOanTuTiReducer, // lấy state từ reducer thì nên làm vậy cho gọn, k cần đến 3 dòng
+    // ketQua: state.gameOanTuTiReducer.ketQua,
+    // soBanThang:state.gameOanTuTiReducer.soBanThang,
+    // soBanChoi:state.gameOanTuTiReducer.soBanChoi,
 })
 
 export default connect (mapStateToProps)(Info)
